@@ -1,5 +1,12 @@
+body{
+  margin:0;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  position: relative;
+  overflow: auto;
 }
 
 .App-logo {
@@ -13,16 +20,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -79,6 +76,7 @@ width: auto;
 
 .donate-button {
   text-align: center;
+  padding-bottom: 200px;
 }
 
 .donate-button button {
@@ -106,7 +104,7 @@ width: auto;
 }
 
 .bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -114,14 +112,19 @@ width: auto;
   background-image: url("../assets/img/bg.png"); /* Replace with the path to your image */
   background-size: cover;
   background-repeat: no-repeat;
-  /* Additional background styles */
   z-index: -1;
-}
-
-.content {
-  position: relative;
 }
 
 .countdown{
   color: #fff;
+  font-size: 50px;
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px); /* Subtract the navbar height from the viewport height */
 }

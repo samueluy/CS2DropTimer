@@ -29,7 +29,13 @@ export default function Countdown() {
       const minutes = duration.minutes();
       const seconds = duration.seconds();
 
-      const countdownString = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+      let countdownString = "";
+      if (days > 0) {
+        countdownString = `${days} ${days === 1 ? "DAY" : "DAYS"} | `;
+      }
+      countdownString += `${hours.toString().padStart(2, "0")}:${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
       setCountdown(countdownString);
     };
 
@@ -42,7 +48,6 @@ export default function Countdown() {
 
   return (
     <div className="countdown">
-      <h1>Item drop reset:</h1>
       <h2>{countdown}</h2>
     </div>
   );
