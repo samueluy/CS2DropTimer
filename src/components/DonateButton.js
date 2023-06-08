@@ -3,7 +3,7 @@ import "../assets/style.css";
 
 const DonateButton = () => {
     const handleClick = () => {
-      window.open("https://your-donation-link.com", "_blank"); // Open link in a new tab
+      window.open("https://steamcommunity.com/tradeoffer/new/?partner=259603877&token=J40hw-d_", "_blank"); // Open link in a new tab
     };
   
     return (
