@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar {
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  background-color: rgba(128, 128, 128, 0.2);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25); /* Add drop shadow effect with increased spread */
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar h1{
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.steam-icon{
+  flex-shrink: 0;
+}
+
+.logo{
+height: 100px;
+width: auto;
+}
+
+.steam-icon{
+  height: 50px;
+  padding-top: 10px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.donate-button {
+  text-align: center;
+}
+
+.donate-button button {
+  background-color: #ccba7c;
+  background-image: linear-gradient(to bottom, #ccba7c, #c3a76b);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.donate-button button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.donate-button button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/bg.png"); /* Replace with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Additional background styles */
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+}
+
+.countdown{
+  color: #fff;
+}
